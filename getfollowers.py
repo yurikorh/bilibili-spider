@@ -1,6 +1,6 @@
 import requests
 import json
-COOKIE = '''buvid3=3ACCBD53-1E26-41C4-8717-04DEBAF554AA110254infoc; LIVE_BUVID=AUTO4715567244701855; stardustvideo=1; CURRENT_FNVAL=16; rpdid=|(u|Jl)|)mJk0J'ullY~kRY~|; sid=jwdljdqh; _uuid=C2D4A698-4F95-13BC-0F3C-992DC2DD695A47933infoc; fts=1557234273; im_notify_type_39621469=0; _uuid=E5026172-366A-7073-F57A-78F7CA78147A64465infoc; CNZZDATA2724999=cnzz_eid%3D702453138-1557145585-https%253A%252F%252Flive.bilibili.com%252F%26ntime%3D1570444035; laboratory=1-1; DedeUserID=39621469; DedeUserID__ckMd5=66e3dad1d2f507c1; SESSDATA=500cb065%2C1580144451%2C45a6f9c1; bili_jct=3ff3196b653b63b05c08a105fe897ee1; CURRENT_QUALITY=112; INTVER=1; __lfcc=1'''
+COOKIE = '''在这里填写你的COOKIE'''
 def get_info(mid):
     """
     获取粉丝数量
@@ -65,7 +65,6 @@ def get_followers(mid, pn, ps):
 
 def run(mid):
     f = get_info(mid)
-    f = 2000
     ps = 50
     total_pn = int(f / ps) + 1
     for pn in range (1, total_pn + 1):
